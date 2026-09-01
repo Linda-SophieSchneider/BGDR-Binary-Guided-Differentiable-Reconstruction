@@ -1,0 +1,9 @@
+{
+  "air_level": 6.610316631849855e-05,
+  "air_sigma": 0.009996090084314346,
+  "silhouette_sigma_factor": 5.0,
+  "silhouette_level": 0.05004655358789023,
+  "silhouette_fraction": 0.36346588134765623,
+  "carving_tolerance": 0.05,
+  "hull_occupancy": 0.39443132612440324
+}

@@ -1,0 +1,850 @@
+{
+  "amplitude_box": {
+    "ceiling": 0.15094350278377533,
+    "factor": 1.5,
+    "material_estimator": "same-seed DART p99.9",
+    "material_level": 0.10062900185585022
+  },
+  "asdpocs": {
+    "alpha": 0.1,
+    "epsilon": 7.084136486053467,
+    "iterations": 100,
+    "regularization_iterations": 10,
+    "sweep": [
+      {
+        "alpha": 0.1,
+        "residual": 0.03693570367540118
+      },
+      {
+        "alpha": 0.2,
+        "residual": 0.040143645996779366
+      },
+      {
+        "alpha": 0.4,
+        "residual": 0.04708872662514131
+      },
+      {
+        "alpha": 0.8,
+        "residual": 0.059491892416774016
+      }
+    ]
+  },
+  "constraint": "wedge120",
+  "dataset": "defrise_flange",
+  "detector": {
+    "pitch_mm": 0.5,
+    "sdd_mm": 900.0,
+    "shape": [
+      256,
+      256
+    ],
+    "sid_mm": 500.0
+  },
+  "grid": [
+    384,
+    384,
+    384
+  ],
+  "inputs": {
+    "phantom": {
+      "bytes": 226492544,
+      "path": "/home/schneider/TrajectoryOptimization/Differentiable-Coverage/data/lof_flange_v3.npy",
+      "sha256": "a61b56ca82134384df65cdf7b860d5d56f1a9f440a07e5f3f569a678fdfcc9eb"
+    },
+    "phantom_metadata": {
+      "bytes": 5535,
+      "path": "/home/schneider/TrajectoryOptimization/Differentiable-Coverage/data/lof_flange_v3_metadata.json",
+      "sha256": "cd64384c2a026d0956140d1ace0ad0a65b2a5105cf638793bdd5e453f400e3ce"
+    },
+    "sinogram": {
+      "bytes": 15728768,
+      "path": "/home/schneider/BGNR_Rekonstruktions/results/defrise_bgnr/sinogram_wedge120_k0060_i10000_n2.npy",
+      "sha256": "2d78a73e7a4e1e4ddc5a303db6c53d8de9068ec904ebffa70764943c49fb3f70"
+    }
+  },
+  "noise_seed": 2,
+  "photon_count": 10000.0,
+  "reference": {
+    "normalization": "divide by exact phantom maximum",
+    "physical_range_per_mm": [
+      0.0,
+      0.2399999052286148
+    ],
+    "source": "/home/schneider/TrajectoryOptimization/Differentiable-Coverage/data/lof_flange_v3.npy",
+    "support_definition": "physical attenuation > 0"
+  },
+  "rows": [
+    {
+      "artifact": {
+        "bytes": 226492544,
+        "path": "/home/schneider/BGNR_Rekonstruktions/results/defrise_bgnr/reconstructions/wedge120_k0060_i10000_n2/sart.npy",
+        "sha256": "ba22ea5ee0764a08830c3a03a0e013b222f1b9e7b83fe389cb8ccfe2268bf857"
+      },
+      "fixed_roi": {
+        "boundary_width_voxels": 3,
+        "dilation_voxels": 12,
+        "foreground_bbox": {
+          "bounds": [
+            [
+              83,
+              301
+            ],
+            [
+              115,
+              269
+            ],
+            [
+              115,
+              269
+            ]
+          ],
+          "ssim": 0.7532094120979309
+        },
+        "ls_scale": 4.229208250944708,
+        "protocol": "fixed-reference-roi-v1",
+        "regions": {
+          "boundary_shell": {
+            "fraction": 0.015469833656593605,
+            "hfen": 0.4946880519739414,
+            "mse": 0.0062197900678729375,
+            "nrmse": 0.36261921643831696,
+            "voxels": 875950
+          },
+          "far_background": {
+            "fraction": 0.9505379288284866,
+            "hfen": 569808.9066649525,
+            "mse": 1.4053131904187806e-05,
+            "nrmse": Infinity,
+            "voxels": 53822408
+          },
+          "foreground_dilated": {
+            "fraction": 0.04946207117151331,
+            "hfen": 0.5374812594082983,
+            "mse": 0.0032580783684431343,
+            "nrmse": 0.2335180873832454,
+            "voxels": 2800696
+          },
+          "whole_volume": {
+            "fraction": 1.0,
+            "hfen": 0.5435581587657651,
+            "mse": 0.00017450933903606243,
+            "nrmse": 0.2430037353858668,
+            "voxels": 56623104
+          }
+        },
+        "roi_source": "dense_reference_only",
+        "threshold": 0.2919921875
+      },
+      "fractional_data_residual": 0.02866414818992801,
+      "method": "sart",
+      "runtime_seconds": 25.97078776359558,
+      "whole_volume": {
+        "affine_gain": 4.219343923572569,
+        "affine_offset": -0.0008010828499008917,
+        "hfen": 0.5439175697692705,
+        "ls_scale": 4.209085374712497,
+        "mse": 0.00017444577913403148,
+        "nrmse": 0.24295947786839114,
+        "psnr": 37.58339534218023,
+        "reference_peak": 1.0,
+        "ssim": 0.9573964476585388
+      }
+    },
+    {
+      "artifact": {
+        "bytes": 226492544,
+        "path": "/home/schneider/BGNR_Rekonstruktions/results/defrise_bgnr/reconstructions/wedge120_k0060_i10000_n2/dart.npy",
+        "sha256": "b27ba71589e74a32aab52c958f3d83d2840821d46e676b8a16efec4afbaaf808"
+      },
+      "fixed_roi": {
+        "boundary_width_voxels": 3,
+        "dilation_voxels": 12,
+        "foreground_bbox": {
+          "bounds": [
+            [
+              83,
+              301
+            ],
+            [
+              115,
+              269
+            ],
+            [
+              115,
+              269
+            ]
+          ],
+          "ssim": 0.5524411797523499
+        },
+        "ls_scale": 2.8471097992197314,
+        "protocol": "fixed-reference-roi-v1",
+        "regions": {
+          "boundary_shell": {
+            "fraction": 0.015469833656593605,
+            "hfen": 0.8402834956299343,
+            "mse": 0.024686888934848317,
+            "nrmse": 0.7224306005838014,
+            "voxels": 875950
+          },
+          "far_background": {
+            "fraction": 0.9505379288284866,
+            "hfen": 2714951.7524628784,
+            "mse": 0.0002852159197600725,
+            "nrmse": Infinity,
+            "voxels": 53822408
+          },
+          "foreground_dilated": {
+            "fraction": 0.04946207117151331,
+            "hfen": 0.9389677709728578,
+            "mse": 0.026874643484123575,
+            "nrmse": 0.6706734551131251,
+            "voxels": 2800696
+          },
+          "whole_volume": {
+            "fraction": 1.0,
+            "hfen": 1.0152826339344738,
+            "mse": 0.001600384078358418,
+            "nrmse": 0.7358947824320575,
+            "voxels": 56623104
+          }
+        },
+        "roi_source": "dense_reference_only",
+        "threshold": 0.2919921875
+      },
+      "fractional_data_residual": 0.21290468279562277,
+      "method": "dart",
+      "runtime_seconds": 8050.12363743782,
+      "whole_volume": {
+        "affine_gain": 2.4229568543045823,
+        "affine_offset": 0.001615309244851565,
+        "hfen": 0.977233199266019,
+        "ls_scale": 2.4402325980516237,
+        "mse": 0.0015616402809725276,
+        "nrmse": 0.7269325470745546,
+        "psnr": 28.064189973346103,
+        "reference_peak": 1.0,
+        "ssim": 0.9097983241081238
+      }
+    },
+    {
+      "artifact": {
+        "bytes": 226492544,
+        "path": "/home/schneider/BGNR_Rekonstruktions/results/defrise_bgnr/reconstructions/wedge120_k0060_i10000_n2/asdpocs.npy",
+        "sha256": "e4ab3f627e08e3ec9b516e3ea0779376a0406d5bcf1e64f4a1c08de45e3ae43b"
+      },
+      "fixed_roi": {
+        "boundary_width_voxels": 3,
+        "dilation_voxels": 12,
+        "foreground_bbox": {
+          "bounds": [
+            [
+              83,
+              301
+            ],
+            [
+              115,
+              269
+            ],
+            [
+              115,
+              269
+            ]
+          ],
+          "ssim": 0.9188944101333618
+        },
+        "ls_scale": 4.248639562906053,
+        "protocol": "fixed-reference-roi-v1",
+        "regions": {
+          "boundary_shell": {
+            "fraction": 0.015469833656593605,
+            "hfen": 0.3615950474089364,
+            "mse": 0.002686700124062464,
+            "nrmse": 0.23832661768710175,
+            "voxels": 875950
+          },
+          "far_background": {
+            "fraction": 0.9505379288284866,
+            "hfen": 236964.86275654033,
+            "mse": 2.50080063592151e-06,
+            "nrmse": Infinity,
+            "voxels": 53822408
+          },
+          "foreground_dilated": {
+            "fraction": 0.04946207117151331,
+            "hfen": 0.36957643634926474,
+            "mse": 0.0011207109733176194,
+            "nrmse": 0.1369577377784786,
+            "voxels": 2800696
+          },
+          "whole_volume": {
+            "fraction": 1.0,
+            "hfen": 0.3711103412042564,
+            "mse": 5.780979178181384e-05,
+            "nrmse": 0.13986347529064808,
+            "voxels": 56623104
+          }
+        },
+        "roi_source": "dense_reference_only",
+        "threshold": 0.2919921875
+      },
+      "fractional_data_residual": 0.024119611803727296,
+      "method": "asdpocs",
+      "runtime_seconds": 207.91685271263123,
+      "whole_volume": {
+        "affine_gain": 4.259832797191788,
+        "affine_offset": -0.0011394727580544247,
+        "hfen": 0.37126312443319326,
+        "ls_scale": 4.245159609877922,
+        "mse": 5.780784469577608e-05,
+        "nrmse": 0.13986111990668434,
+        "psnr": 42.380132225325234,
+        "reference_peak": 1.0,
+        "ssim": 0.9797468781471252
+      }
+    },
+    {
+      "amplitude_excess": 1.76353120803833,
+      "artifact": {
+        "bytes": 226492544,
+        "path": "/home/schneider/BGNR_Rekonstruktions/results/defrise_bgnr/reconstructions/wedge120_k0060_i10000_n2/bgdr_dart_support.npy",
+        "sha256": "d5b438f7a1b8a40ca41b93278581d0ef17b54558130a481ee13d5886df25e1ee"
+      },
+      "epochs": 389,
+      "fixed_roi": {
+        "boundary_width_voxels": 3,
+        "dilation_voxels": 12,
+        "foreground_bbox": {
+          "bounds": [
+            [
+              83,
+              301
+            ],
+            [
+              115,
+              269
+            ],
+            [
+              115,
+              269
+            ]
+          ],
+          "ssim": 0.686030387878418
+        },
+        "ls_scale": 3.5283164020448257,
+        "protocol": "fixed-reference-roi-v1",
+        "regions": {
+          "boundary_shell": {
+            "fraction": 0.015469833656593605,
+            "hfen": 0.73053520487973,
+            "mse": 0.02120090415359375,
+            "nrmse": 0.6694839089440358,
+            "voxels": 875950
+          },
+          "far_background": {
+            "fraction": 0.9505379288284866,
+            "hfen": 842672.7403638752,
+            "mse": 2.5192611211485167e-05,
+            "nrmse": Infinity,
+            "voxels": 53822408
+          },
+          "foreground_dilated": {
+            "fraction": 0.04946207117151331,
+            "hfen": 0.8679736769231912,
+            "mse": 0.014687204123415796,
+            "nrmse": 0.4958032018704953,
+            "voxels": 2800696
+          },
+          "whole_volume": {
+            "fraction": 1.0,
+            "hfen": 0.876211083643878,
+            "mse": 0.000750406068145682,
+            "nrmse": 0.5039086127712041,
+            "voxels": 56623104
+          }
+        },
+        "roi_source": "dense_reference_only",
+        "threshold": 0.2919921875
+      },
+      "fractional_data_residual": 0.0538741582180725,
+      "method": "bgdr_dart_support",
+      "runtime_seconds": 34.72712707519531,
+      "support": {
+        "containment": 0.7938820944285425,
+        "false_negative_fraction": 0.20611790557145748,
+        "false_negative_voxels": 285160,
+        "false_positive_voxels": 560990,
+        "iou": 0.5648428620652415,
+        "occupancy": 0.029304469073260273,
+        "precision": 0.6619136870144819,
+        "truth_occupancy": 0.024433135986328125
+      },
+      "whole_volume": {
+        "affine_gain": 3.478767893508809,
+        "affine_offset": 0.0011632994827463616,
+        "hfen": 0.8725593148619477,
+        "ls_scale": 3.4908103330334446,
+        "mse": 0.0007501515147914395,
+        "nrmse": 0.5038231373779437,
+        "psnr": 31.248510094188475,
+        "reference_peak": 1.0,
+        "ssim": 0.9635505080223083
+      }
+    },
+    {
+      "amplitude_excess": 1.6253647804260254,
+      "artifact": {
+        "bytes": 226492544,
+        "path": "/home/schneider/BGNR_Rekonstruktions/results/defrise_bgnr/reconstructions/wedge120_k0060_i10000_n2/bgdr_dilated_support.npy",
+        "sha256": "750843d0027496f3afcd4fbf4b9bcdb193761faa7880797967bf934a338044db"
+      },
+      "epochs": 485,
+      "fixed_roi": {
+        "boundary_width_voxels": 3,
+        "dilation_voxels": 12,
+        "foreground_bbox": {
+          "bounds": [
+            [
+              83,
+              301
+            ],
+            [
+              115,
+              269
+            ],
+            [
+              115,
+              269
+            ]
+          ],
+          "ssim": 0.7995292544364929
+        },
+        "ls_scale": 4.160250530434136,
+        "protocol": "fixed-reference-roi-v1",
+        "regions": {
+          "boundary_shell": {
+            "fraction": 0.015469833656593605,
+            "hfen": 0.5849546382720754,
+            "mse": 0.010381156837523121,
+            "nrmse": 0.46847436160783057,
+            "voxels": 875950
+          },
+          "far_background": {
+            "fraction": 0.9505379288284866,
+            "hfen": 596765.8318025498,
+            "mse": 7.650211913324299e-06,
+            "nrmse": Infinity,
+            "voxels": 53822408
+          },
+          "foreground_dilated": {
+            "fraction": 0.04946207117151331,
+            "hfen": 0.6758269951343662,
+            "mse": 0.0062856140460198304,
+            "nrmse": 0.3243497869698186,
+            "voxels": 2800696
+          },
+          "whole_volume": {
+            "fraction": 1.0,
+            "hfen": 0.6811371188968438,
+            "mse": 0.00031817130588808685,
+            "nrmse": 0.32812106910636135,
+            "voxels": 56623104
+          }
+        },
+        "roi_source": "dense_reference_only",
+        "threshold": 0.2919921875
+      },
+      "fractional_data_residual": 0.035258007739096625,
+      "method": "bgdr_dilated_support",
+      "runtime_seconds": 44.235366344451904,
+      "support": {
+        "containment": 0.9612130280163067,
+        "false_negative_fraction": 0.0387869719836933,
+        "false_negative_voxels": 53661,
+        "false_positive_voxels": 3047343,
+        "iou": 0.30012911822476324,
+        "occupancy": 0.07730346255832249,
+        "precision": 0.30380849509339614,
+        "truth_occupancy": 0.024433135986328125
+      },
+      "whole_volume": {
+        "affine_gain": 4.149807549854163,
+        "affine_offset": -7.916456814947327e-05,
+        "hfen": 0.6809819490267672,
+        "ls_scale": 4.148841405820141,
+        "mse": 0.00031815136310782877,
+        "nrmse": 0.32811078573259495,
+        "psnr": 34.973662117050154,
+        "reference_peak": 1.0,
+        "ssim": 0.975868821144104
+      }
+    },
+    {
+      "amplitude_excess": 1.701529860496521,
+      "artifact": {
+        "bytes": 226492544,
+        "path": "/home/schneider/BGNR_Rekonstruktions/results/defrise_bgnr/reconstructions/wedge120_k0060_i10000_n2/bgdr_carved_hull.npy",
+        "sha256": "ccfcfa415677cfae202a3106355afafc3d75f2ae604f5ee6fb218f13780a9cef"
+      },
+      "epochs": 500,
+      "fixed_roi": {
+        "boundary_width_voxels": 3,
+        "dilation_voxels": 12,
+        "foreground_bbox": {
+          "bounds": [
+            [
+              83,
+              301
+            ],
+            [
+              115,
+              269
+            ],
+            [
+              115,
+              269
+            ]
+          ],
+          "ssim": 0.8488749265670776
+        },
+        "ls_scale": 4.227036988299056,
+        "protocol": "fixed-reference-roi-v1",
+        "regions": {
+          "boundary_shell": {
+            "fraction": 0.015469833656593605,
+            "hfen": 0.498840586132652,
+            "mse": 0.006528806550990273,
+            "nrmse": 0.3715179932102008,
+            "voxels": 875950
+          },
+          "far_background": {
+            "fraction": 0.9505379288284866,
+            "hfen": 40008.331672501125,
+            "mse": 6.953302406176981e-09,
+            "nrmse": Infinity,
+            "voxels": 53822408
+          },
+          "foreground_dilated": {
+            "fraction": 0.04946207117151331,
+            "hfen": 0.5602908240213927,
+            "mse": 0.003376792087219294,
+            "nrmse": 0.23773434201276944,
+            "voxels": 2800696
+          },
+          "whole_volume": {
+            "fraction": 1.0,
+            "hfen": 0.5603197249158735,
+            "mse": 0.00016702973992711135,
+            "nrmse": 0.2377390457340492,
+            "voxels": 56623104
+          }
+        },
+        "roi_source": "dense_reference_only",
+        "threshold": 0.2919921875
+      },
+      "fractional_data_residual": 0.024131025325979858,
+      "method": "bgdr_carved_hull",
+      "runtime_seconds": 44.5488486289978,
+      "support": {
+        "containment": 0.9955084280220893,
+        "false_negative_fraction": 0.0044915719779107756,
+        "false_negative_voxels": 6214,
+        "false_positive_voxels": 20957272,
+        "iou": 0.06164814863886408,
+        "occupancy": 0.3944421344333225,
+        "precision": 0.0616653006209486,
+        "truth_occupancy": 0.024433135986328125
+      },
+      "whole_volume": {
+        "affine_gain": 4.228301248149027,
+        "affine_offset": -0.00010796111340711373,
+        "hfen": 0.5603198355220714,
+        "ls_scale": 4.227026968268993,
+        "mse": 0.0001670297399963079,
+        "nrmse": 0.23773904578329408,
+        "psnr": 37.77206194922075,
+        "reference_peak": 1.0,
+        "ssim": 0.9873179793357849
+      }
+    },
+    {
+      "amplitude_excess": 1.5,
+      "artifact": {
+        "bytes": 226492544,
+        "path": "/home/schneider/BGNR_Rekonstruktions/results/defrise_bgnr/reconstructions/wedge120_k0060_i10000_n2/bgdr_carved_hull_box.npy",
+        "sha256": "887ba6ce8ea2f05944d3dfe4bfae77638031e0bee736710d38b2b8e080d41aa5"
+      },
+      "epochs": 212,
+      "fixed_roi": {
+        "boundary_width_voxels": 3,
+        "dilation_voxels": 12,
+        "foreground_bbox": {
+          "bounds": [
+            [
+              83,
+              301
+            ],
+            [
+              115,
+              269
+            ],
+            [
+              115,
+              269
+            ]
+          ],
+          "ssim": 0.8354384303092957
+        },
+        "ls_scale": 4.159619531046683,
+        "protocol": "fixed-reference-roi-v1",
+        "regions": {
+          "boundary_shell": {
+            "fraction": 0.015469833656593605,
+            "hfen": 0.5734781056046225,
+            "mse": 0.012576706483864355,
+            "nrmse": 0.5156397801821709,
+            "voxels": 875950
+          },
+          "far_background": {
+            "fraction": 0.9505379288284866,
+            "hfen": 31661.815113879824,
+            "mse": 3.5242632631695365e-09,
+            "nrmse": Infinity,
+            "voxels": 53822408
+          },
+          "foreground_dilated": {
+            "fraction": 0.04946207117151331,
+            "hfen": 0.6505994204282133,
+            "mse": 0.008776501685302118,
+            "nrmse": 0.38326616576052935,
+            "voxels": 2800696
+          },
+          "whole_volume": {
+            "fraction": 1.0,
+            "hfen": 0.6506150083369189,
+            "mse": 0.00043410730094122266,
+            "nrmse": 0.3832676445750411,
+            "voxels": 56623104
+          }
+        },
+        "roi_source": "dense_reference_only",
+        "threshold": 0.2919921875
+      },
+      "fractional_data_residual": 0.06458417273546943,
+      "method": "bgdr_carved_hull_box",
+      "runtime_seconds": 19.017257690429688,
+      "support": {
+        "containment": 0.9955084280220893,
+        "false_negative_fraction": 0.0044915719779107756,
+        "false_negative_voxels": 6214,
+        "false_positive_voxels": 20957272,
+        "iou": 0.06164814863886408,
+        "occupancy": 0.3944421344333225,
+        "precision": 0.0616653006209486,
+        "truth_occupancy": 0.024433135986328125
+      },
+      "whole_volume": {
+        "affine_gain": 4.159131921431891,
+        "affine_offset": 3.8231812059858275e-05,
+        "hfen": 0.6506149999432181,
+        "ls_scale": 4.159614003981727,
+        "mse": 0.00043410729233771093,
+        "nrmse": 0.38326764077707726,
+        "psnr": 33.62402918617814,
+        "reference_peak": 1.0,
+        "ssim": 0.9862226247787476
+      }
+    },
+    {
+      "amplitude_excess": 1.7768834829330444,
+      "artifact": {
+        "bytes": 226492544,
+        "path": "/home/schneider/BGNR_Rekonstruktions/results/defrise_bgnr/reconstructions/wedge120_k0060_i10000_n2/bgdr_oracle_support.npy",
+        "sha256": "3a9834665ef5a340c962f9f5ac85c5a1e0a6917aec331fef173486edf52a04b5"
+      },
+      "epochs": 498,
+      "fixed_roi": {
+        "boundary_width_voxels": 3,
+        "dilation_voxels": 12,
+        "foreground_bbox": {
+          "bounds": [
+            [
+              83,
+              301
+            ],
+            [
+              115,
+              269
+            ],
+            [
+              115,
+              269
+            ]
+          ],
+          "ssim": 0.9335566759109497
+        },
+        "ls_scale": 4.1877550815870865,
+        "protocol": "fixed-reference-roi-v1",
+        "regions": {
+          "boundary_shell": {
+            "fraction": 0.015469833656593605,
+            "hfen": 0.19520422305783883,
+            "mse": 0.0017155042347196312,
+            "nrmse": 0.1904402965583446,
+            "voxels": 875950
+          },
+          "far_background": {
+            "fraction": 0.9505379288284866,
+            "hfen": 0.496578440687505,
+            "mse": 0.0,
+            "nrmse": Infinity,
+            "voxels": 53822408
+          },
+          "foreground_dilated": {
+            "fraction": 0.04946207117151331,
+            "hfen": 0.2885609567207121,
+            "mse": 0.001411764849261344,
+            "nrmse": 0.15371666159774483,
+            "voxels": 2800696
+          },
+          "whole_volume": {
+            "fraction": 1.0,
+            "hfen": 0.2885609567207178,
+            "mse": 6.982881345160536e-05,
+            "nrmse": 0.15371666159774483,
+            "voxels": 56623104
+          }
+        },
+        "roi_source": "dense_reference_only",
+        "threshold": 0.2919921875
+      },
+      "fractional_data_residual": 0.0195348826893985,
+      "method": "bgdr_oracle_support",
+      "runtime_seconds": 44.07190465927124,
+      "support": {
+        "containment": 1.0,
+        "false_negative_fraction": 0.0,
+        "false_negative_voxels": 0,
+        "false_positive_voxels": 0,
+        "iou": 1.0,
+        "occupancy": 0.024433135986328125,
+        "precision": 1.0,
+        "truth_occupancy": 0.024433135986328125
+      },
+      "whole_volume": {
+        "affine_gain": 4.188149566860396,
+        "affine_offset": -3.523335644905947e-05,
+        "hfen": 0.2885609567207178,
+        "ls_scale": 4.1877550815870865,
+        "mse": 6.982881345160536e-05,
+        "nrmse": 0.15371666159774483,
+        "psnr": 41.55965337535075,
+        "reference_peak": 1.0,
+        "ssim": 0.9945219159126282
+      }
+    }
+  ],
+  "schema_version": "bgnr-defrise-seed-v1",
+  "support_parameters": {
+    "dart": {
+      "coverage": 1.0,
+      "delta": 0.0,
+      "delta_ratio": 0.0,
+      "material_level": 0.10062900185585022,
+      "occupancy": 0.029304469073260273,
+      "otsu_threshold": 0.04013332724571228,
+      "probe_epochs": 60,
+      "probe_residual": 0.341825107433313,
+      "sweep": [
+        {
+          "coverage": 1.0,
+          "delta": 0.0,
+          "occupancy": 0.029304469073260273,
+          "ratio": 0.0,
+          "residual": 0.341825107433313
+        },
+        {
+          "coverage": 1.0,
+          "delta": 0.0020125800371170043,
+          "occupancy": 0.02937369876437717,
+          "ratio": 0.02,
+          "residual": 0.3421048746028678
+        },
+        {
+          "coverage": 1.0,
+          "delta": 0.005031450092792511,
+          "occupancy": 0.029464492091426143,
+          "ratio": 0.05,
+          "residual": 0.34253136988564736
+        },
+        {
+          "coverage": 1.0,
+          "delta": 0.010062900185585023,
+          "occupancy": 0.029629883942780672,
+          "ratio": 0.1,
+          "residual": 0.34313570072467897
+        },
+        {
+          "coverage": 1.0,
+          "delta": 0.020125800371170045,
+          "occupancy": 0.030838825084544993,
+          "ratio": 0.2,
+          "residual": 0.3432934713053988
+        }
+      ]
+    },
+    "dilation_voxels": 2,
+    "ground_truth_diagnostics": {
+      "carved_hull": {
+        "containment": 0.9955084280220893,
+        "false_negative_fraction": 0.0044915719779107756,
+        "false_negative_voxels": 6214,
+        "false_positive_voxels": 20957272,
+        "iou": 0.06164814863886408,
+        "occupancy": 0.3944421344333225,
+        "precision": 0.0616653006209486,
+        "truth_occupancy": 0.024433135986328125
+      },
+      "dart": {
+        "containment": 0.7938820944285425,
+        "false_negative_fraction": 0.20611790557145748,
+        "false_negative_voxels": 285160,
+        "false_positive_voxels": 560990,
+        "iou": 0.5648428620652415,
+        "occupancy": 0.029304469073260273,
+        "precision": 0.6619136870144819,
+        "truth_occupancy": 0.024433135986328125
+      },
+      "dilated": {
+        "containment": 0.9612130280163067,
+        "false_negative_fraction": 0.0387869719836933,
+        "false_negative_voxels": 53661,
+        "false_positive_voxels": 3047343,
+        "iou": 0.30012911822476324,
+        "occupancy": 0.07730346255832249,
+        "precision": 0.30380849509339614,
+        "truth_occupancy": 0.024433135986328125
+      },
+      "oracle": {
+        "containment": 1.0,
+        "false_negative_fraction": 0.0,
+        "false_negative_voxels": 0,
+        "false_positive_voxels": 0,
+        "iou": 1.0,
+        "occupancy": 0.024433135986328125,
+        "precision": 1.0,
+        "truth_occupancy": 0.024433135986328125
+      }
+    },
+    "hull": {
+      "air_level": 3.478685539448634e-05,
+      "air_sigma": 0.009995135478675365,
+      "carving_tolerance": 0.05,
+      "hull_occupancy": 0.3944421344333225,
+      "silhouette_fraction": 0.36347503662109376,
+      "silhouette_level": 0.050010464248771314,
+      "silhouette_sigma_factor": 5.0
+    }
+  },
+  "view_count": 60,
+  "voxel_mm": 0.3
+}

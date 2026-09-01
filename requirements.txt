@@ -1,0 +1,13 @@
+# Core dependencies for the Defrise pipeline (code/run_defrise_bgnr.py,
+# code/make_defrise_figure.py, code/make_defrise_table.py). CUDA and a GPU are
+# required to run the reconstruction itself; the table generator needs only
+# numpy and the committed JSON in results/.
+numpy==2.4.6
+scipy==1.18.0
+matplotlib==3.11.0
+torch==2.13.0
+diffct-mlx==2.1.0
+
+# Only needed to run code/camera/*.py, which additionally requires the
+# authors' private industrial camera scan data, see README.md.
+# differentiable-coverage @ git+https://github.com/Linda-SophieSchneider/Differentiable-Coverage.git

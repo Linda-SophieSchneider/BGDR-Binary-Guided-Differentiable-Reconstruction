@@ -1,0 +1,47 @@
+{
+  "otsu_threshold": 0.025344885885715485,
+  "material_level": 0.10038994252681732,
+  "delta": 0.0,
+  "delta_ratio": 0.0,
+  "coverage": 1.0,
+  "occupancy": 0.029901663462320965,
+  "probe_residual": 0.3430261359063245,
+  "probe_epochs": 60,
+  "sweep": [
+    {
+      "ratio": 0.0,
+      "delta": 0.0,
+      "occupancy": 0.029901663462320965,
+      "coverage": 1.0,
+      "residual": 0.3430261359063245
+    },
+    {
+      "ratio": 0.02,
+      "delta": 0.0020077988505363465,
+      "occupancy": 0.03014412632694951,
+      "coverage": 1.0,
+      "residual": 0.34304122710192375
+    },
+    {
+      "ratio": 0.05,
+      "delta": 0.005019497126340866,
+      "occupancy": 0.030695667973271123,
+      "coverage": 1.0,
+      "residual": 0.34290337363273377
+    },
+    {
+      "ratio": 0.1,
+      "delta": 0.010038994252681732,
+      "occupancy": 0.03234683142768012,
+      "coverage": 1.0,
+      "residual": 0.34228363327898714
+    },
+    {
+      "ratio": 0.2,
+      "delta": 0.020077988505363464,
+      "occupancy": 0.042441738976372614,
+      "coverage": 1.0,
+      "residual": 0.3410611201420281
+    }
+  ]
+}

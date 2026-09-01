@@ -1,0 +1,33 @@
+{
+  "clean_sinogram": {
+    "bytes": 15728768,
+    "path": "/home/schneider/BGNR_Rekonstruktions/results/defrise_bgnr/sinogram_clean_wedge120_k0060_g384.npy",
+    "sha256": "75f3d77eb2c555707a11dd177429dbdd499d8573e042fef18205c4eb626d332d"
+  },
+  "dataset": "defrise_flange",
+  "result": {
+    "bytes": 19165,
+    "path": "/home/schneider/BGNR_Rekonstruktions/results/defrise_bgnr/defrise_results.json",
+    "sha256": "fb0d998fe32f5d3fe5de5589c60c2c9645b847dfc5330937c30cb7b5fa26654c"
+  },
+  "runtime_seconds": 26521.86570763588,
+  "schema_version": "bgnr-run-manifest-v1",
+  "seed_outputs": [
+    {
+      "bytes": 26055,
+      "path": "/home/schneider/BGNR_Rekonstruktions/results/defrise_bgnr/defrise_results_wedge120_k0060_i10000_n0.json",
+      "sha256": "118bf14baec353d6848f3bc131e0b1aa75cd06a4f3a0aaec43cc7a6ebd110cbc"
+    },
+    {
+      "bytes": 26046,
+      "path": "/home/schneider/BGNR_Rekonstruktions/results/defrise_bgnr/defrise_results_wedge120_k0060_i10000_n1.json",
+      "sha256": "038ac5dbe33da62fd175757bdb60c6d0a4800eb926039b5c177f92bc085375f7"
+    },
+    {
+      "bytes": 26059,
+      "path": "/home/schneider/BGNR_Rekonstruktions/results/defrise_bgnr/defrise_results_wedge120_k0060_i10000_n2.json",
+      "sha256": "ad88d4c0799e8d324422ba7835d22058c22e569b71a7b5c1650b461d87174d8f"
+    }
+  ],
+  "status": "complete"
+}
